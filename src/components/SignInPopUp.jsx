@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { User, Lock } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
-import SignInImage from '../assets/HTN-SignIn-Image.jpg'; // Import the image
+import SignInImage from '/HTN-SignIn-Image.jpg';
 
 const DEMO_USERNAME = 'hacker';
 const DEMO_PASSWORD = 'htn2025';

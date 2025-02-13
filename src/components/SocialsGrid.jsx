@@ -1,8 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import logo from '../assets/HTN-logo.png';
-import grid from '../assets/Dots-Grid.png';
-import InstagramIcon from '../assets/Instagram-Icon.webp';
-import YoutubeIcon from '../assets/Youtube-Icon.svg';
 
 function SocialsGrid() {
   // Manage socials div
@@ -50,22 +46,22 @@ function SocialsGrid() {
         ref={buttonRef}
       >
         <div className="hover:bg-white hover:bg-opacity-15 p-2 transition-all rounded-lg" >
-          <img src={grid} className="w-[25px] h-[25px]" alt="Grid" ></img>
+          <img src="/Dots-Grid.png" className="w-[25px] h-[25px]" alt="Grid" ></img>
         </div>
       </button> 
 
       {showSocials && (
         <div ref={socialRef} className="absolute sm:right-[140px] right-[30px] sm:top-[80px] top-[90px] bg-white bg-opacity-[3%] backdrop-blur-lg border-gray-500 border-opacity-20 border-[1px] bg-background rounded-[10px] p-2.5 flex shadow-lg px-2.5 z-50">
           <a href="https://hackthenorth.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-2 px-4 hover:bg-white hover:bg-opacity-5 rounded-[10px] transition-all">
-            <img src={logo} className="w-[43px] h-[43px]" alt="Website" />
+            <img src="/HTN-Logo.png" className="w-[43px] h-[43px]" alt="Website" />
             <span className="text-white text-[11px] mt-2.5">Website</span>
           </a>
           <a href="https://instagram.com/hackthenorth" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-2 px-4 hover:bg-white hover:bg-opacity-5 rounded-[10px] transition-all">
-            <img src={InstagramIcon} className="w-[45px] h-[45px]" alt="Instagram" />
+            <img src="/Instagram-Icon.webp" className="w-[45px] h-[45px]" alt="Instagram" />
             <span className="text-white text-[11px] mt-2.5">Instagram</span>
           </a>
           <a href="https://www.youtube.com/@hackthenorthtv" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center p-2 px-4 hover:bg-white hover:bg-opacity-5 rounded-[10px] transition-all">
-            <img src={YoutubeIcon} className="w-[45px] h-[45px]" alt="YouTube" />
+            <img src="/Youtube-Icon.svg" className="w-[45px] h-[45px]" alt="YouTube" />
             <span className="text-white text-[11px] mt-2.5">YouTube</span>
           </a>
         </div>
