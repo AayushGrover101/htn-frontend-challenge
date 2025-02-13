@@ -18,7 +18,7 @@ function FiltersScroll() {
           <button
             key={f.name}
             onClick={() => setFilter(f.type)}
-            className={`sm:pr-5 sm:pl-5 pl-3.5 pr-3.5 sm:pt-1 pb-1 sm:text-[15px] text-[13px] border-b-[1px] outline-none transition-all ease-out duration-100
+            className={`sm:pr-5 sm:pl-5 pl-3.5 pr-3.5 sm:pt-1 pb-1.5 sm:text-[15px] text-[13px] border-b-[2px] outline-none transition-all ease-out duration-100
               ${
                 filter === f.type
                   ? "border-b-[1px] border-white"
